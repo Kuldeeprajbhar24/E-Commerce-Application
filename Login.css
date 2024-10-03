@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(128, 128, 128, 0.575);
+}
+main{
+    justify-content: center;
+    align-items: center;
+}
+main>form{
+    width: 28%;
+    margin: auto;
+    text-align: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    background-color: white;
+}
+main>form>h1{
+    padding-right: 85px;
+}
+main>form>#p1{
+    padding-right: 140px;
+}
+#spanpara{
+    padding-right: 25px;
+}
+#LoginLink{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+main>form>div{
+    text-align: left;
+    margin: auto;
+}
+main>form>input{
+    display: flex;
+    margin: auto;
+    width: 300px;
+    height: 34px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+}
+#ForgotPass{
+    text-decoration: none;
+}
+#ForgotPass>p{
+    padding-left: 185px;
+    margin-bottom: 0px;
+    margin-top: 0;
+    text-decoration: none;
+}
+#submitbutton{
+    width: 300px;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: orange;
+    font-weight: bold;
+}
+#submitbutton:active{
+    background-color: antiquewhite;
+    color: black;
+}
+input::placeholder{
+    text-align: left;
+    padding: 10px;
+    background-color: bisque;
+}
+.Glogo{
+    width: 9rem;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: brown;
+    color: white;
+}
+.Flogo{
+    width: 9rem;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    background-color: darkslateblue;
+    color: white;
+}
+.Glogo:active{
+    background-color: wheat;
+    color: black;
+}
+.Flogo:active{
+    background-color: wheat;
+    color: black;
+}

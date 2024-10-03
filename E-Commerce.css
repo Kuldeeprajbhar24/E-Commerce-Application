@@ -1,0 +1,213 @@
+/* Global settings */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Navigation Bar */
+nav {
+    display: grid;
+    background-color: #282c34;
+    grid-template-columns: 20% 40% 20%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav div a img {
+    width: 50%;
+}
+
+#main ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    width: 70%;
+}
+
+#main ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 1rem;
+    font-weight: bold;
+    font-size: large;
+    transition: all 0.3s;
+}
+
+#main ul li a:hover {
+    background-color: #61dafb;
+    color: #282c34;
+}
+
+#right1 {
+    display: flex;
+    justify-content: end;
+}
+
+#right1 a {
+    margin-right: 1rem;
+}
+
+#right1 a button {
+    border-radius: 5px;
+    background-color: #61dafb;
+    border: none;
+    font-weight: bold;
+    font-size: large;
+    width: 100px;
+    height: 40px;
+    color: #282c34;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#right1 a button:hover {
+    background-color: white;
+    color: #282c34;
+    border: 1px solid #61dafb;
+}
+
+#right1 a button:active {
+    background-color: #282c34;
+    color: white;
+}
+
+/* Design Sections */
+.design {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.design div {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    transition: transform 0.2s;
+}
+
+.design div:hover {
+    transform: scale(1.05);
+}
+
+.design div img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.design div h2,
+.design div h3,
+.design div h4 {
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+.design div button {
+    width: 100%;
+    background-color: #61dafb;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    height: 2.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.design div button:hover {
+    background-color: #282c34;
+}
+
+/* Cart Popup */
+#popup {
+    width: 40%;
+    background-color: white;
+    position: fixed;
+    right: -100%;
+    top: 0;
+    height: 100vh;
+    padding: 2rem;
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.2);
+    transition: right 0.5s;
+    overflow-y: scroll;
+    z-index: 2000;
+}
+
+#static h3 {
+    text-align: right;
+    color: #ff4c4c;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#static h2 {
+    text-align: center;
+    color: #333;
+}
+
+.cart-design {
+    display: grid;
+    grid-template-columns: 25% 35% 20% 20%;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.cart-design img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.cart-design h3, .cart-design h4 {
+    color: #333;
+    margin: 0;
+}
+
+.cart-design input {
+    width: 60px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.cart-design i {
+    color: #ff4c4c;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+#footer {
+    padding: 1.5rem 0;
+    border-top: 1px solid #ccc;
+}
+
+#footer h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#footer button {
+    width: 100%;
+    height: 3rem;
+    background-color: #61dafb;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#footer button:hover {
+    background-color: #282c34;
+}
